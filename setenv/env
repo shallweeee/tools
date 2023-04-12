@@ -1,0 +1,11 @@
+# DB settings
+DB_HOST = ? ip -4 -o a | grep -Ev ' (lo|virbr|br-|docker)' | sed 's;/.*;;; s/.* //'
+DB_PORT =
+DB_USER = test
+DB_PSWD =
+
+# server settings
+SERVER_NAME =
+SERVER_IP = ! ip -4 -o a | grep -Ev ' (lo|virbr|br-|docker)' | sed 's;/.*;;; s/.* //'
+BACKEND_PORT =
+WEBHOOK_SLACK = *
